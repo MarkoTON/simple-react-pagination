@@ -15,6 +15,9 @@ function App() {
       setLoading(true);
       const res = await axios.get('https://randomuser.me/api/?page=1&results=50&nat=us');
       setLoading(false);
+      console.log(res)
+      console.log(res.data)
+      console.log(res.data.results)
       setUsers(res.data.results);
 
       setTotalPages(Math.ceil(res.data.results.length / USER_PER_PAGE));

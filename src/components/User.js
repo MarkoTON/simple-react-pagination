@@ -1,6 +1,8 @@
 import React from 'react'
 
 const User = ({ user }) => {
+  console.log(user)
+  console.log('User')
   return (
     <div>
       <hr />
